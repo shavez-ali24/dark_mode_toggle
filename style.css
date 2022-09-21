@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    margin: 15px;
+}
+
+h1{
+    font-weight: 200;
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+img{
+    width: 30%;
+    height:70vh;
+    margin-left: 125px;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+    width: 55%;
+    margin-left: 125px;
+}
+
+label{
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    border: 2px solid;
+    right: 20px;
+    top: 20px;
+    border-radius: 20px;
+}
+
+label::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 19px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.4s;
+}
+
+label.active::before{
+    left: 24px;
+    background-color: white;
+}
+
+body.night{
+    background-color: black;
+    color: white;
+}
